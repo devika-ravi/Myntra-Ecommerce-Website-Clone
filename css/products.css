@@ -1,0 +1,601 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  overflow: scroll;
+}
+
+/* Header nav bar starts */
+
+.headerNav {
+  /* position: fixed; */
+  z-index: 3;
+}
+
+.navShadow {
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+}
+
+.myntraLogo {
+  cursor: pointer;
+}
+
+.navLinks {
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.navLinks:hover {
+  border-bottom: 3px solid red;
+  position: relative;
+  z-index: 2;
+  transition-delay: .15s;
+}
+
+.navLinkMen:hover {
+  border-bottom: 3px solid rgb(228, 69, 69);
+}
+
+.navLinkWomen:hover {
+  border-bottom: 3px solid rgb(236, 89, 163);
+}
+
+.navLinkKids:hover {
+  border-bottom: 3px solid rgb(255, 83, 21);
+}
+
+.navLinkHomeLiving:hover {
+  border-bottom: 3px solid rgb(240, 186, 7);
+}
+
+.navLinkBeauty:hover {
+  border-bottom: 3px solid rgba(55, 182, 154, 0.979);
+}
+
+.navLinkStudio:hover {
+  border-bottom: 3px solid rgba(235, 30, 75, 0.979);
+}
+
+.navLinks:hover .content {
+  visibility: visible;
+}
+
+.fw-14 {
+  font-size: 14px;
+}
+
+.sup {
+  color: #ff3f6c;
+}
+
+.fs-13x {
+  font-size: 13px;
+}
+
+.content {
+  visibility: hidden;
+  position: fixed;
+  left: 0px;
+  top: 85px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+  pointer-events: none;
+  cursor: auto;
+}
+
+.contents {
+  background-color: #fefefe;
+  margin: 0px auto !important;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 83%;
+  border: none;
+  outline: none;
+  z-index: 2;
+  position: fixed;
+  top: 83.3px;
+  left: 115px;
+  pointer-events: auto;
+}
+
+.menSectionHeadings {
+  color: rgb(228, 69, 69);
+}
+
+.womenSectionHeadings {
+  color: rgb(236, 89, 163);
+}
+
+.kidsSectionHeadings {
+  color: rgb(255, 83, 21);
+}
+
+.homeLivingSectionHeadings {
+  color: rgb(240, 186, 7);
+}
+
+.beautySectionHeadings {
+  color: rgba(55, 182, 154, 0.979);
+}
+
+.hoversub {
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.hoversub:hover {
+  font-weight: bold;
+}
+
+.studioContent {
+  width: 45% !important;
+  left: 305px;
+}
+
+.studioLogo {
+  margin: 0 auto
+}
+
+.studioLogo img {
+  margin-left: 180px;
+  width: 90px;
+}
+
+/* .exploreStudio {
+    font-size: 14px;
+} */
+
+.exploreStudio {
+  text-decoration: none;
+  color: #302d2d;
+  font-size: 12px;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 13px;
+  line-height: 3;
+}
+
+.search {
+  width: 100%;
+  padding: 5px;
+  text-indent: 30px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background-color: rgba(77, 77, 77, 0.05);
+  background-image: url("../assets/icons/header/search.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+.search-icon {
+  padding: 12px;
+  border-radius: 2px;
+  background-color: rgba(77, 77, 77, 0.05);
+  border: none;
+}
+
+.search:focus {
+  outline: none;
+  border: none;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+/* Header nav bar ends */
+
+/* Main section starts*/
+
+.mainSection {
+  position: relative;
+  top: 100px;
+  /* z-index: 0;  */
+}
+
+/* Source link section at top starts */
+.sourceLinks a {
+  font-size: 14px;
+  color: #313030;
+  text-decoration: none;
+}
+
+.sourceLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Source link section at top ends */
+
+
+/* Product details left section starts */
+.dressImages img {
+  cursor: zoom-in;
+  /* cursor: url("assets/icons/header/search.png"); */
+  line-height: 50px;
+  transition: transform .2s;
+}
+
+.dressImages img:hover {
+  transform: scale(1.02);
+}
+
+/* Product details left section ends */
+
+/* Product details right section starts */
+#dressName {
+  font-size: 24px;
+  color: #292828;
+  font-weight: 700;
+}
+
+#dressSubName {
+  font-size: 20px;
+  color: #494848;
+  font-weight: 400;
+}
+
+.ratingLink {
+  text-decoration: none;
+}
+
+/* div .ratingsBorder {
+    cursor: pointer;
+  }
+
+  .ratingsBorder {
+    border: 11px solid red;
+  } */
+
+/* .ratingsBorder:hover {
+    border: 2px solid green;
+  } */
+
+#starRatings {
+  font-size: 16px;
+  color: #292828;
+  font-weight: 700;
+}
+
+.addedStar {
+  color: rgba(55, 182, 154, 0.979);
+}
+
+#numberRatings {
+  font-size: 16px;
+  color: #494848;
+  font-weight: 400;
+}
+
+#discount {
+  color: #ff905a;
+}
+
+#inclusive {
+  color: rgba(55, 182, 154, 0.979);
+}
+
+#sizeChart {
+  color: #ff3e6c;
+  font-size: 12px;
+}
+
+.sizeIcons span {
+  cursor: pointer;
+}
+
+.sizeIcons span:hover {
+  border: 1px solid #ff3e6c !important;
+}
+
+.addToBagButton {
+  outline: none;
+  border: 1px solid #ff3e6c;
+  background-color: #ff3e6c;
+  border-radius: 5px;
+  padding: 15px 50px;
+  font-size: 14px;
+}
+
+.addToBagButton:hover {
+  background-color: #f8567c;
+}
+
+.wishlistButton {
+  outline: none;
+  border: 1px solid #8f8d8d;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px 45px;
+  font-size: 14px;
+}
+
+.wishlistButton:hover {
+  border: 1px solid #292828;
+}
+
+.pincode .form-control {
+  border: 1px solid rgb(116, 116, 116);
+}
+
+.pincode .input-group-text {
+  border: 1px solid rgb(116, 116, 116);
+}
+
+.pincode input {
+  font-size: 16px;
+}
+
+.pincode input:focus {
+  outline: none;
+  border: 1px solid rgb(116, 116, 116);
+  box-shadow: none;
+}
+
+.pincode .input-group-text {
+  font-size: 14px;
+  color: #f8567c;
+}
+
+.pincodeNote {
+  font-size: 12px;
+  color: rgb(58, 57, 57);
+}
+
+.noteOnDress {
+  font-size: 16px;
+  color: rgb(58, 57, 57);
+}
+
+.bestPricePoints {
+  color: rgb(58, 57, 57);
+  font-size: 16px;
+}
+
+.credPoint,
+.emiPoint {
+  color: rgb(58, 57, 57);
+  font-size: 12px;
+}
+
+.bestPricePoints a,
+.credPoint a,
+.emiPoint a,
+#seeMore,
+#viewDetails {
+  text-decoration: none;
+  color: #f8567c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pD,
+.sAndF,
+.mAndC,
+.rVB {
+  font-size: 16px;
+  color: rgb(58, 57, 57);
+}
+
+.specificationsList {
+  color: rgb(58, 57, 57);
+}
+
+.smallSpec {
+  font-size: 12px;
+}
+
+.bigSpec {
+  font-size: 16px;
+}
+
+.ratingsBigNumber {
+  font-size: 42px;
+}
+
+.ratingsBorder {
+  border-right: 1px solid rgb(129, 128, 128);
+}
+
+.starNumber {
+  font-size: 12px;
+  color: rgb(172, 168, 168);
+}
+
+.starRating {
+  font-size: 10px !important;
+  color: rgb(172, 168, 168);
+}
+
+.ratingProgressBar {
+  height: 4px !important;
+  margin-top: 4px !important;
+  margin-left: 0px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  width: 120px !important;
+}
+
+.ratingProgressBar .firstBar {
+  background-color: #14958f;
+  width: 75% !important;
+}
+
+.ratingProgressBar .secondBar {
+  background-color: rgb(48, 156, 151);
+  width: 40% !important;
+}
+
+.ratingProgressBar .thirdBar {
+  background-color: rgb(113, 197, 193);
+  width: 20% !important;
+}
+
+.ratingProgressBar .fourthBar {
+  background-color: rgb(236, 196, 16);
+  width: 7% !important;
+}
+
+.ratingProgressBar .fifthBar {
+  background-color: rgb(209, 68, 12);
+  width: 22% !important;
+}
+
+.wCS,
+.rM {
+  color: rgb(58, 57, 57);
+}
+
+.whatCustomerSaidProgressBar .progress-bar {
+  background-color: #14958f;
+}
+
+.whatCustomerSaidProgressBar {
+  height: 4px !important;
+  margin-top: 4px !important;
+  margin-left: 0px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  width: 160px !important;
+  background-color: rgb(190, 187, 187) !important;
+}
+
+.whatCustomerSaidProgressBar .firstBar {
+  width: 86%;
+}
+
+.whatCustomerSaidProgressBar .secondBar {
+  width: 85%;
+}
+
+.whatCustomerSaidProgressBar .thirdBar {
+  width: 53%;
+}
+
+.smallRating {
+  font-size: 10px;
+}
+
+#fourStar {
+  background-color: #4abeb9;
+  padding: 1px 3px;
+}
+
+#fiveStar {
+  background-color: #14958f;
+  padding: 1px 3px;
+}
+
+.pink {
+  color: #f8567c;
+}
+
+/* Product details right section ends */
+
+/* More Pills starts */
+.morePills a {
+  text-decoration: none;
+  color: #f8567c;
+  border-color: #888 !important;
+}
+
+.morePills a:hover {
+  border-color: #f8567c !important;
+}
+
+/* More Pills ends */
+
+/* Shop the look section starts */
+.shopTheLookSection .cropImage {
+  border: 3px solid #f8567c !important;
+}
+
+.bigDress {
+  width: 545px;
+  height: 740px;
+}
+
+.shopTheLookBigImageContainer {
+  position: relative;
+}
+
+.transparentScan {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  height: 325.6px;
+  width: 327px;
+  background: rgba(40, 44, 63, 0.263);
+  mix-blend-mode: normal;
+  opacity: 0.49;
+  border: 3px solid rgb(148, 150, 159);
+  border-radius: 4px;
+}
+
+/* Shop the look section starts */
+
+/* Main section ends*/
+
+/* Footer starts */
+.footerSection {
+  position: relative;
+  top: 80px;
+  background-color: whitesmoke;
+}
+
+.fs-12px {
+  font-size: 12px !important;
+}
+
+.footerLinks,
+.popularSearches {
+  text-decoration: none;
+  color: #494848;
+}
+
+.contactusFooter {
+  text-decoration: none;
+  color: #526cd0;
+}
+
+/* Footer ends */
+
+/* Fixed Blue Bell starts*/
+.fixedBlueBell {
+  position: fixed;
+  top: 70%;
+  right: 2%;
+  padding: 8px;
+  background-color: #0380f5;
+  border-radius: 50px;
+}
+
+.fixedBlueBell img {
+  width: 40px;
+}
+
+.blueBell-tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  color: white;
+  background-color: #192733;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  /* To make it top */
+  top: -40px;
+  left: -50%;
+}
+
+.fixedBlueBell:hover .blueBell-tooltip-text {
+  visibility: visible;
+}
+
+/* Fixed Blue Bell ends*/
