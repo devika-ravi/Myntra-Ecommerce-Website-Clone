@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra</title>
+    <title>Help Center</title>
     <link rel="shortcut icon" href="assets/icons/header/myntra-logo.png">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/contactUs.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src=""></script>
 </head>
 
 <body>
@@ -728,14 +730,14 @@
                         </form>
 
                     </div>
-                    <!-- <div class="col-auto pointer">
-                        <img src="assets/icons/header/profile.png">
-                    </div> -->
                     <div class="col-auto pointer">
-                        <img src="assets/icons/header/wishlist.png">
+                        <img src="assets/icons/header/profile.png" alt="Profile Image">
+                    </div>
+                    <div class="col-auto pointer">
+                        <img src="assets/icons/header/wishlist.png" alt="Wishlist Image">
                     </div>
                     <div class="col-auto me-3 pointer">
-                        <img src="assets/icons/header/bag.png">
+                        <img src="assets/icons/header/bag.png" alt="Bag Image">
                     </div>
                 </div>
                 <!-- Right part of header nav bar starts -->
@@ -745,42 +747,300 @@
     </div>
     <!-- Header Nav bar ends -->
 
-    <!-- Main body starts -->
-    <div class="outsidePink">
-        <div class="signupMainBody">
-            <!-- <div class = "signupForm"> -->
-            <form id="formToValidate">
-                <div class="coupon">
-                    <img src="assets/images/signup/signup-coupon.png" alt="Signup coupon">
+    <!-- Main section starts -->
+    <div class="container-fluid mainSection">
+        <div class="mx-5 px-5">
+            <div class="row d-flex">
+                <div class="col-3 ms-5 ps-5">
+                    <div class="fw-bold fs-20px">HELP CENTER</div>
+                    <div class="opacity-75 fs-14px">We are here to help you</div>
                 </div>
-
-                <h1><b>Login</b> <small>or</small> <b>Signup</b></h1>
-
-                <div class="inputPhoneNumber d-flex flex-column justify-content-center">
-                    <input type="text" placeholder="+91 | Mobile Number*" id="phoneNumber" name="phoneNumber">
-                    <div class="errorMessage"></div>
-                    <!-- <input type="text" value="+91" class="disabled-input" disabled>
-                          <input type="text" class="enabled-textbox"> -->
-                </div>
-
-                <p>By continuing, I agree to the <a href="https://www.myntra.com/termsofuse">Terms of Use</a> & <a
-                        href="https://www.myntra.com/privacypolicy">Privacy Policy</a></p>
-
-                <div class="d-flex justify-content-center">
-                    <button type="submit" id="continueButton">CONTINUE</button>
+                <div class="col-7 ms-5 d-flex align-items-center justify-content-between border border-secondary-emphasis rounded-1 px-3 py-2">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="assets/images/contactUs/bigBag.png" alt="Bag Image">
+                        </div>
+                        <div>
+                            <div class="fs-12px fw-bold">TRACK, CANCEL, RETURN/EXCHANGE</div>
+                            <div class="fs-11px opacity-75">Manage your purchases</div>
+                        </div>
                     </div>
+                    <div class="fs-12px fw-bold px-3 py-2 ordersButton">
+                        ORDERS
+                    </div>
+                </div>
+            </div>
+            <hr class="text-secondary-emphasis" id="mainHorizontalLineBreak">
 
-                    <p>Have trouble logging in? <a href="
-                        https://www.myntra.com/recovery?referer=https%3A%2F%2Fwww.myntra.com%2F">Get help</a></p>
+            <div class="row d-flex ms-5 ps-4">
+                <div class="col-3 border-end text-secondary-emphasis">
+                    <div class="fw-bold fs-12px mb-3">SELECT QUERY TYPE</div>
+                    <div class="fw-bold fs-14px d-flex justify-content-between opacity-75 mb-3">
+                        <div>Order Related Queries</div>
+                        <div class="pe-4 fs-20px"> > </div>
+                    </div>
+                    <div class="fw-bold fs-14px d-flex justify-content-between activeQueryType mb-3">
+                        <div>Non-order Related Issues</div>
+                        <div class="pe-4 fs-20px"> > </div>
+                    </div>
+                    <div class="fw-bold fs-14px d-flex justify-content-between opacity-75 mb-5">
+                        <div>Recent Issues</div>
+                        <div class="pe-4 fs-20px"> > </div>
+                    </div>
+                    <hr class="text-secondary-emphasis">
+                    <div class="fw-bold fs-14px d-flex justify-content-between opacity-75 mt-3">
+                        <div>Frequently Asked Questions</div>
+                        <div class="pe-4 fs-20px"> > </div>
+                    </div>
+                    <div class="postalAddressMainDiv fs-13x"> 
+                        <a href="https://www.myntra.com/contactus/postal">
+                            <div  class="fw-bold opacity-75">Want to reach us old style? Here is our</div>
+                            <div class="postalAddressBlue">postal address</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="border px-4 pt-4 pb-2 ms-4">
+                        <div class="pb-3 border-bottom">
+                            <div class="fw-bold fs-12px hoverPointer">SELECT A QUERY</div>
+                        </div>
+                        <div class="d-flex justify-content-between hoverPointer pt-3 pb-2 border-bottom">
+                            <div class="fs-14px opacity-75">Payment/Refund</div>
+                            <div class="pe-4 fs-20px"> > </div>
+                        </div>
+                        <div class="d-flex justify-content-between hoverPointer pt-3 pb-2 border-bottom">
+                            <div class="fs-14px opacity-75">Offers, Discounts, Coupons</div>
+                            <div class="pe-4 fs-20px"> > </div>
+                        </div>                       
+                        <div class="d-flex justify-content-between hoverPointer pt-3 pb-2 border-bottom">
+                            <div class="fs-14px opacity-75">Manage Your Account</div>
+                            <div class="pe-4 fs-20px"> > </div>
+                        </div>
+                        <div class="d-flex justify-content-between hoverPointer pt-3">
+                            <div class="fs-14px opacity-75">Other</div>
+                            <div class="pe-4 fs-20px"> > </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!-- Main section ends -->
 
-            </form>
-            <!-- </div> -->
+    <!-- Footer starts -->
+    <div class="container-fluid py-2 footerSection">
+        <div class="container-lg text-md-start text-center">
+            <!-- Footer row 1 starts -->
+            <div class="row">
+                <!-- Column 1 of row 1 starts -->
+                <div class="col-lg-2 col-md-2 me-2 mx-auto">
+                    <div class="fw-bold my-3 fs-12px">ONLINE SHOPPING</div>
+                    <div class="row justify-content-md-start justify-content-center fs-13x">
+                        <a href="https://www.myntra.com/shop/men" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Men</a>
+                        <a href="https://www.myntra.com/shop/women"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Women</a>
+                        <a href="https://www.myntra.com/shop/kids" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Kids</a>
+                        <a href="https://www.myntra.com/shop/home-living"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Home & Living</a>
+                        <a href="https://www.myntra.com/personal-care"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Beauty</a>
+                        <a href="https://www.myntra.com/giftcard" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">
+                            Gift Cards<span class="newRed ms-2 text-white fw-bold px-2 rounded-pill">New</span>
+                        </a>
+                        <a href="https://www.myntra.com/myntrainsider?cache=false" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">
+                            Myntra Insider<span class="newRed ms-2 text-white fw-bold px-2 rounded-pill">New</span>
+                        </a>                            
+                    </div>
+                    <div class="fw-bold my-3 fs-12px">USEFUL LINKS</div>
+                    <div class="row justify-content-md-start justify-content-center fs-13x">
+                        <a href="https://blog.myntra.com" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Blog</a>
+                        <a href="https://careers.myntra.com" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Careers</a>
+                        <a href="https://www.myntra.com/sitemap" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Site
+                            Map</a>
+                        <a href="https://www.myntra.com/corp-info" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Corporate
+                            Information</a>
+                        <a href="https://www.myntra.com/security/whitehat"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Whitehat</a>
+                    </div>
+                </div>
+                <!-- Column 1 of row 1 ends -->
+                <!-- Column 2 of row 1 starts -->
+                <div class="col-lg-2 col-md-2 me-2 mx-auto">
+                    <div class="fw-bold my-3 fs-12px">CUSTOMER POLICIES</div>
+                    <div class="row justify-content-md-start fs-13x">
+                        <!-- justify-content-center -->
+                        <a href="https://www.myntra.com/contactus" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Contact
+                            Us</a>
+                        <a href="https://www.myntra.com/faqs" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">FAQ</a>
+                        <a href="https://www.myntra.com/tac" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">T&C</a>
+                        <a href="https://www.myntra.com/termsofuse" class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Terms Of
+                            Use</a>
+                        <a href="https://www.myntra.com/login?referer=https%3A%2F%2Fwww.myntra.com%2Fmy%2Forders"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Track Orders</a>
+                        <a href="https://www.myntra.com/faqs#shipping"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Shipping</a>
+                        <a href="https://www.myntra.com/faqs#cancel"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Cancellation</a>
+                        <a href="https://www.myntra.com/faqs#returns"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Returns</a>
+                        <a href="https://www.myntra.com/privacypolicy"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Privacy policy</a>
+                        <a href="https://www.myntra.com/termsofuse#23.%20Grievance%20Officer"
+                            class="col-md-12 col-auto mb-1 footerLinks linkHoverUnderLine">Grievance Officer</a>
+                    </div>
+                </div>
+                <!-- Column 2 of row 1 ends -->
+                <!-- Column 3 of row 1 starts -->
+                <div class="col-lg-4 col-md-4 me-2">
+                    <div class="fw-bold fs-12px my-3">EXPERIENCE MYNTRA APP ON MOBILE</div>
+
+                    <div class="row justify-content-md-start justify-content-center">
+                        <div class="col-5">
+                            <a href="https://play.google.com/store/apps/details?id=com.myntra.android">
+                                <img src="assets/images/contactUs/google-play-store.png" alt="Play Store">
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="https://apps.apple.com/in/app/myntra-indias-fashion-store/id907394059">
+                                <img src="assets/images/contactUs/apple-app-store.png" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="opacity-75 fs-12px pt-4 pb-4">(OR)</div>
+                    <div class="opacity-75 fs-13x">In case of any concerns contact us on</div>
+                    <div class="opacity-75 fs-13x fw-bold pb-1">+91-80-61561999</div>
+                    <div class="fw-bold my-3 fs-12px">KEEP IN TOUCH</div>
+                    <div class="row justify-content-md-start justify-content-center">
+                        <div class="col-auto">
+                            <a href="https://www.facebook.com/myntra">
+                                <img src="assets/images/contactUs/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fmyntra">
+                                <img src="assets/images/contactUs/twitter.png" alt="Twitter">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://www.youtube.com/user/myntradotcom">
+                                <img src="assets/images/contactUs/youtube.png" alt="Youtube">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://www.instagram.com/myntra/">
+                                <img src="assets/images/contactUs/instagram.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3 of row 1 ends -->
+                <!-- Column 4 of row 1 starts -->
+                <div class="col-lg-3 col-md-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-2 col-auto my-2">
+                            <img src="assets/images/contactUs/original.png" alt="Original">
+                        </div>
+                        <div class="col-md-10 col-auto">
+                            <span><b>100% ORIGINAL </b>guarantee for all products at myntra.com</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center pt-3">
+                        <div class="col-md-2 col-auto my-2">
+                            <img src="assets/images/contactUs/return-30-days.png" alt="30 days return">
+                        </div>
+                        <div class="col-md-10 col-auto">
+                            <span><b>Return within 30 days </b>of receiving your order</span>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center pt-3">
+                        <div class="col-md-2 col-auto my-2">
+                            <img src="assets/images/contactUs/truck.png" alt="Truck">
+                        </div>
+                        <div class="col-md-10 col-auto">
+                            <span><b>Get free delivery </b>for every order above Rs. 799</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 4 of row 1 ends -->
+            </div>
+            <!-- Footer row 1 ends -->
+
+            <!-- Footer row 2 starts -->
+            <div class="row py-3 mx-4">
+                <div class="col-lg-11 col-md-11 fw-bold my-3 fs-12px mb-3">POPULAR SEARCHES</div>
+                <div>
+                    <span class="fs-13x popularSearches">
+                        <a href="" class="footerLinks">Nike</a> |
+                        <a href="" class="footerLinks">Puma</a> |
+                        <a href="" class="footerLinks">Adidas</a> |
+                        <a href="" class="footerLinks">Fila</a> |
+                        <a href="" class="footerLinks">Lee</a> |
+                        <a href="" class="footerLinks">United Colors of Benetton</a> |
+                        <a href="" class="footerLinks">Wrangler</a> |
+                        <a href="" class="footerLinks">Fastrack</a> |
+                        <a href="" class="footerLinks">Woodland</a> |
+                        <a href="" class="footerLinks">Yepme</a> |
+                        <a href="" class="footerLinks">Levis</a> |
+                        <a href="" class="footerLinks">Tommy</a> |
+                        <a href="" class="footerLinks">Hilfiger</a> |
+                        <a href="" class="footerLinks">peter-england</a> | 
+                        <a href="" class="footerLinks">fabindia </a> | <br>
+                        <a href="" class="footerLinks">nike shoes</a> |
+                        <a href="" class="footerLinks">tops</a> |
+                        <a href="" class="footerLinks">shirts</a> |
+                        <a href="" class="footerLinks">jackets</a> |
+                        <a href="" class="footerLinks">myntra coupons</a> |
+                        <a href="" class="footerLinks">kurtis</a> |
+                        <a href="" class="footerLinks">shoes</a> |
+                        <a href="" class="footerLinks">tunics</a> |
+                        <a href="" class="footerLinks">dresses</a> |
+                        <a href="" class="footerLinks">watches</a> |
+                        <a href="" class="footerLinks">saree</a> |
+                        <a href="" class="footerLinks">kurtas</a> | 
+                        <a href="" class="footerLinks">bags</a> |
+                        <a href="" class="footerLinks">T-shirts</a> | 
+                        <a href="" class="footerLinks">designer saree</a> | 
+                        <a href="" class="footerLinks">sunglasses</a> <br> |
+                        <a href="" class="footerLinks">jeans</a> | 
+                        <a href="" class="footerLinks">trousers</a> | 
+                        <a href="" class="footerLinks">adidas shoes</a> | 
+                        <a href="" class="footerLinks">casual shoes</a> | 
+                        <a href="" class="footerLinks">sports shoes</a> |
+                        <a href="" class="footerLinks">fastrack watches</a> |
+                        <a href="" class="footerLinks">ethnic wear</a> |
+                        <a href="" class="footerLinks">woodland-shoes</a> |
+                        <a href="" class="footerLinks">mobile app</a> |
+                        <a href="" class="footerLinks">puma shoes</a> |
+                        <a href="" class="footerLinks">accessories</a> | <br>
+                        <a href="" class="footerLinks">anarkali suit</a> |
+                        <a href="" class="footerLinks">running shoes</a> |
+                        <a href="" class="footerLinks">reebok</a> |
+                        <a href="" class="footerLinks">formal wear</a> |
+                        <a href="" class="footerLinks">cat</a> |
+                        <a href="" class="footerLinks">jewellery</a> 
+                    </span>
+                </div>
+            </div>
+            <!-- Footer row 2 ends -->
+
+            <!-- Footer row 3 starts -->
+            <div class="row py-3 mx-4 justify-content-between">
+                <div class="col-auto opacity-75">
+                    Have issues? <a href="https://www.myntra.com/contactus" class="footerLinks">Contact
+                        Us</a>
+                </div>
+                <div class="col-auto opacity-75">
+                    © 2023 www.myntra.com. All rights reserved.
+                </div>
+                <div class="col-auto opacity-75">
+                    <a href="https://www.flipkart.com/" class="footerLinks">A Flipkart company</a>
+                </div>
+            </div>
+            <!-- Footer row 3 ends -->
+
         </div>
     </div>
-
-    <!-- Main body ends -->
-
-    <script src="js/login.js"></script>
+    <!-- Footer ends -->
 
 </body>
 

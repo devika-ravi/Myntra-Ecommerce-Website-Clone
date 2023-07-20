@@ -222,6 +222,7 @@ input::-webkit-input-placeholder {
     outline: 1px solid lightgray;
     font-size: 12px;
     color: rgb(65, 62, 62);
+    caret-color: #ff3f6c;
     padding: 8px;
     border: none;
 }

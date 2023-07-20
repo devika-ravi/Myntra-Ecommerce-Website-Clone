@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra</title>
     <link rel="shortcut icon" href="assets/icons/header/myntra-logo.png">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/OTP.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src=""></script>
 </head>
 
 <body>
@@ -729,13 +730,13 @@
 
                     </div>
                     <!-- <div class="col-auto pointer">
-                        <img src="assets/icons/header/profile.png">
+                        <img src="assets/icons/header/profile.png" alt="Profile Image">
                     </div> -->
                     <div class="col-auto pointer">
-                        <img src="assets/icons/header/wishlist.png">
+                        <img src="assets/icons/header/wishlist.png" alt="Wishlist Image">
                     </div>
                     <div class="col-auto me-3 pointer">
-                        <img src="assets/icons/header/bag.png">
+                        <img src="assets/icons/header/bag.png" alt="Bag Image">
                     </div>
                 </div>
                 <!-- Right part of header nav bar starts -->
@@ -748,40 +749,35 @@
     <!-- Main body starts -->
     <div class="outsidePink">
         <div class="signupMainBody">
-            <!-- <div class = "signupForm"> -->
-            <form id="formToValidate">
-                <div class="coupon">
-                    <img src="assets/images/signup/signup-coupon.png" alt="Signup coupon">
+                <div class="mx-5 pt-5 pb-3">
+                    <img src="assets/images/OTP/verify-with-OTP.png" alt="OTP">
                 </div>
-
-                <h1><b>Login</b> <small>or</small> <b>Signup</b></h1>
-
-                <div class="inputPhoneNumber d-flex flex-column justify-content-center">
-                    <input type="text" placeholder="+91 | Mobile Number*" id="phoneNumber" name="phoneNumber">
-                    <div class="errorMessage"></div>
-                    <!-- <input type="text" value="+91" class="disabled-input" disabled>
-                          <input type="text" class="enabled-textbox"> -->
+                <h1 class="ms-5 ps-2"><b>Verify with OTP</b></h1>
+                <div class="ms-5 ps-2 fs-11px opacity-75 mb-5">Sent to XXXXXXXXXX</div>
+                <div class="d-flex ms-5 ps-2">
+                    <form>
+                        <input type="text" class="otpBox">
+                        <input type="text" class="otpBox">
+                        <input type="text" class="otpBox">
+                        <input type="text" class="otpBox">
+                    </form> 
                 </div>
-
-                <p>By continuing, I agree to the <a href="https://www.myntra.com/termsofuse">Terms of Use</a> & <a
-                        href="https://www.myntra.com/privacypolicy">Privacy Policy</a></p>
-
-                <div class="d-flex justify-content-center">
-                    <button type="submit" id="continueButton">CONTINUE</button>
-                    </div>
-
-                    <p>Have trouble logging in? <a href="
-                        https://www.myntra.com/recovery?referer=https%3A%2F%2Fwww.myntra.com%2F">Get help</a></p>
-
-            </form>
-            <!-- </div> -->
+                <div class="ms-5 ps-2 mt-4 fs-11px fw-bold textPink">RESEND OTP</div>
+                <div class="ms-5 ps-2 mt-4 fs-11px">
+                    <span class="opacity-75">Log in using</span>
+                    <a href="">
+                        <span class="textPink fw-bold">Password</span>
+                    </a>
+                </div>
+                <div class="ms-5 ps-2 mt-4 fs-11px" id="endOfPage">
+                    <span class="opacity-75">Have trouble logging in? </span>                    
+                    <a href="https://www.myntra.com/recovery?referer=https%3A%2F%2Fwww.myntra.com%2F">
+                        <span class="textPink fw-bold">Get help</span>
+                    </a>
+                </div> 
         </div>
     </div>
-
     <!-- Main body ends -->
-
-    <script src="js/login.js"></script>
-
 </body>
 
 </html>
